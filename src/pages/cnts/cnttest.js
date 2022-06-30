@@ -11,7 +11,7 @@ const CntTest =() => {
                   <div className="tit_line"></div>
                   <div className="cnt_sub_tit">서브타이틀</div>
                   <div className="cnt_sec">
-                      asdasdasd커밋테스트
+                      asdasdasd커밋테스트2
                   </div>
                 </div>
             </div>
