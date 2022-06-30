@@ -1,0 +1,266 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/*헤더*/
+.all_header{
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 -35px 55px 7px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+.header_inner{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: baseline;
+}
+.logo_txt{margin-left: 8px;}
+.hd_btn_wrap{
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hd_btn_wrap a{
+    font-weight: normal;
+    font-size: 16px;
+}
+.line{width: 1px; height: 17px; background: #393939; margin: 0 20px 0 20px;}
+
+/*푸터*/
+footer{
+
+}
+.all_footer{
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 35px 40px 7px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #f8f8f8;
+}
+.footer_inner{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.footer_inner p {
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    font-weight: normal;
+    font-size: 16px;
+}
+/*햄버거메뉴*/
+.hamb_menu{
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.hamb_menu + label{
+    display: none;
+}
+.hm_wrap_hide{
+    display: none;
+}
+
+/*미디어쿼리*/
+@media (min-width: 1210px){
+    .hm_wrap{display: none;}
+}
+@media (max-width: 1210px){
+    .logo{
+        left: 20px;
+    }
+    .hd_btn_wrap{
+        right: 20px;
+        display: none;
+    }
+    .footer_inner p { left: 20px; }
+
+    /*햄버거메뉴 미디어쿼리*/
+    .hamb_menu{
+        display: none;
+    }
+    /* 햄버거 들어갈 공간 label 설정 
+    relative  줌 
+    */
+    .hamb_menu + label{
+        z-index: 999;
+        display: block;
+        width:2.5rem;
+        height:2rem;
+        position:absolute;
+        right: 20px;
+        cursor:pointer;
+        
+    }
+
+    /* span 으로 햄버거 만들기  
+        absolute 주고 아래에 한 줄씩 위치 처리
+    */
+    .hamb_menu+label>span{
+        display:block;
+        width:100%;
+        height:5px;
+        border-radius: 30px;
+        background-color: black;
+        transition:all .35s;
+        position:absolute;
+    }
+
+
+    /* span 햄버거 한 줄 한 줄 처리 */
+
+    .hamb_menu + label>span:nth-child(1){
+        top:0;
+    }
+    .hamb_menu + label>span:nth-child(2){
+        top:50%;
+        transform:translateY(-50%)
+    }
+    .hamb_menu + label>span:nth-child(3){
+        bottom:0;
+    }
+
+
+
+    /* input box checked 쳌박스 눌리면 모션 주기 */
+
+
+    .hamb_menu:checked + label>span:nth-child(1){
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    .hamb_menu:checked + label>span:nth-child(2){
+        opacity:0;
+    }
+    .hamb_menu:checked + label>span:nth-child(3){
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+    .links-container{
+        height:0;
+        overflow:hidden;
+    }
+    
+    
+    .hm_wrap_show{
+        display: block;
+        width: 300px;
+        min-height: 600px;
+        position: absolute;
+        top: -38px;
+        transition: .3s;
+        right: 0px;
+        background: #fff;
+        box-shadow: 20px -20px 85px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 0 35px;
+    }
+    .hm_wrap_hide{
+        display: block;
+        width: 300px;
+        min-height: 600px;
+        position: absolute;
+        top: -38px;
+        transition: .3s;
+        right: -300px;
+        background: #fff;
+    }
+    .hm_wrap{
+        width: 100%;
+        min-height: calc( 100% - 40px );
+        height: 100%;
+        padding: 20px;
+        position: relative;
+        text-align: right;
+        overflow: hidden;
+    }
+    .hm_login{
+        position: absolute;
+        top: 30px;
+        cursor: pointer;
+    }
+    .rel_line2 {
+        width: 100%;
+        height: 1px;
+        background: #606060;
+        margin-top: 50px;
+    }
+    .mn_txt_wrap2 {
+        width: 100%;
+        min-height: 50px;
+        text-align: right;
+        position: relative;
+        line-height: 50px;
+    }
+    .mn_txt_tit2 {
+        display: flex;
+        justify-content: right;
+        font-size: 17px;
+        font-weight: 900;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .mn_txt_line2 {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        width: 140px;
+        height: 1px;
+        background: #606060;
+    }
+    .try_btn2{
+        font-size: 14px;
+        transform:scaleY(-1);
+        transition:.3s; 
+      }
+    .try_ref2{
+        font-size: 14px;
+        transform:scaleY(1);
+        transition:.3s; 
+    }
+    .mn_txt_line2{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        width: 140px;
+        height: 1px;
+        background: #606060;
+    }
+    .mn_submn_show2{
+        line-height: 28px;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+    .mn_submn_hide2{
+        display: none;
+        line-height: 28px;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+    .mn_submn_show2 li{
+        padding-right: 50px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .mn_submn_show2 li:last-child{
+        padding-bottom: 20px;
+    }
+
+}
