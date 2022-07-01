@@ -1,13 +1,11 @@
 import React from "react";
-import './head_foot.css';
+import './left_foot.css';
 
 
 const footer =() => {
     return(
         <footer className="all_footer">
-            <div className="footer_inner">
-                <p>H.J.Y _ Domi Portfolio<br/>© CopyRight BY Domi. ALL RIGHTS RESERVED.</p>
-            </div>
+            <p>H.J.Y _ Domi Portfolio<br/>© CopyRight BY Domi. ALL RIGHTS RESERVED.</p>
         </footer>
     )
     

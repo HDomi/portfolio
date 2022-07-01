@@ -1,6 +1,6 @@
 import React from "react";
 import './cnt.css';
-import '../../App.css';
+
 
 
 const CntTest =() => {

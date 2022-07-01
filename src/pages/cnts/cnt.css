@@ -1,0 +1,42 @@
+.cnt{
+    text-align: center;
+  }
+  .cnt_wrap{
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    padding: 0 50px 0 50px;
+  }
+  .cnt_tit{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 100px;
+  }
+  .tit_line{
+    width: 100%;
+    background: #606060;
+    height: 1px;
+    margin: 15px 0 10px 0;
+  }
+  .cnt_sub_tit{
+    font-size: 17px;
+    color: #8f8f8f;
+  }
+  .cnt_sec{
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  /*******************미디어쿼리*******************/
+  @media (max-width: 1210px){
+    .cnt_wrap{
+      width: 100%;
+    }
+    .cnt_sec{
+      margin-top: 20px;
+    }
+  }
+  
