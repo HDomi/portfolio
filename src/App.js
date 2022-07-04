@@ -12,6 +12,7 @@ const App = () => {
   return ( 
       <div className="App">
         <div className="wrap">
+            <div className="back_lm"></div>
             <Left_menu />
             <body className="app-body">
               <Header />

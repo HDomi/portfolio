@@ -4,22 +4,26 @@
     min-width: 350px;
     min-height: 100%;
     background: #fff;
-    position: relative;
+    position: fixed;
     z-index: 998;
     background: url(../../img/left_mn_bg.jpg)no-repeat;
     background-position:center;
     background-attachment: fixed;
-    transition:.3s;
 }
 .lm_wrap_show{
-    width: 850px;
-    transition:.3s;
+    width: 550px;
+    box-shadow: 0 0px 37px -8px #000;
+}
+.back_lm{
+    min-width: 350px;
+    min-height: 100%;
 }
 .lm_cnt{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     padding: 15px;
     z-index: 999;
+    position: absolute;
 }
 .lm_cnt_show{
     background: url(../../img/body-bg.png);
@@ -35,10 +39,53 @@
     width: 100%;
     height: 50px;
 }
-.fa_lm_style{
+
+.icon_wrap svg{
     color: #ffffff;
     font-size: 36px;
     cursor: pointer;
+}
+.icon_wrap svg path{
+    color: #ffffff;
+}
+.profile_img_sec{
+    margin-top: 185px;
+}
+.profile_img_sec_n{
+    display: none;
+}
+.myName{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.myName_txt{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+/*좌측메뉴 열림*/
+.lm_menu_wrap{
+    display: none;
+}
+.lm_menu_wrap>ul>li{
+    margin-top: 15px;
+}
+.lm_menu_wrap>ul>li span{
+    color: #fff;
+}
+.lm_menu_wrap_show{
+    margin-top: 100px;
+    display: inherit;
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+}
+.lm_menu_wrap_show a{
+    color: #fff;
 }
 /*햄버거*/
 .hamb_menu{
@@ -159,11 +206,24 @@
     top: 15px;
     z-index: 999;
 }
-.fa_lm_style2{
-    z-index: 999;
-    color: red;
+.hd_icon_wrap{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.hd_icon_wrap svg{
+    color: #000;
     font-size: 36px;
     cursor: pointer;
+}
+.hd_icon_wrap svg path{
+    color: #000;
 }
 /*헤더햄버거*/
 .hd_hamb_menu{

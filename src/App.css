@@ -40,3 +40,6 @@ div{box-sizing: border-box;}
   }
 
 }
+@media (max-width: 1050px){
+  .back_lm{display: none;}
+}
