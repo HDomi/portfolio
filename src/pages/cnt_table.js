@@ -12,8 +12,8 @@ function CntTable(){
         <Routes>
             <Route path="/" >
               <Route index element={<CntTest />} />
-              <Route path="/homepage" element={<CntTest />} />
-              <Route path="/profile" element={<CntTest2 />} />
+              <Route path="/portfolio/homepage" element={<CntTest />} />
+              <Route path="/portfolio/profile" element={<CntTest2 />} />
             </Route>
         </Routes>  
     );

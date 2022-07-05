@@ -35,13 +35,13 @@ const Header =() => {
        
                 <div className={"hd_menu_wrap " + (hamOpen ? "hd_menu_wrap_show" : null)}>
                     <ul>
-                        <li><Link to={"/homepage"}>- Homepage</Link></li>
-                        <li><Link to={"/profile"}>- Profile</Link></li>
+                        <li><Link to={"/portfolio/homepage"}>- Homepage</Link></li>
+                        <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
                         <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : null)}> ▼</div>
                             <div className={"webpub_sh " + "hd_shelf " + (webpubOpen ? "hd_shelf_show" : null)}>
                                 <ul>
-                                    <li>└ <Link to={"/wp/self"}>☆ 개인_프로젝트</Link></li>
-                                    <li>└ <Link to={"/wp/dot"}>회사1</Link></li>
+                                    <li>└ <Link to={"/portfolio/wp/self"}>☆ 개인_프로젝트</Link></li>
+                                    <li>└ <Link to={"/portfolio/wp/dot"}>회사1</Link></li>
                                     
                                 </ul>
                             </div>
@@ -49,13 +49,13 @@ const Header =() => {
                         <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : null)}> ▼</span>
                             <div className={"webde_sh " + "hd_shelf " + (webdeOpen ? "hd_shelf_show" : null)}>
                                 <ul>
-                                    <li>└ <Link to={"/wd/self"}>☆ 개인_프로젝트</Link></li>
-                                    <li>└ <Link to={"/wd/dot"}>회사1</Link></li>
+                                    <li>└ <Link to={"/portfolio/wd/self"}>☆ 개인_프로젝트</Link></li>
+                                    <li>└ <Link to={"/portfolio/wd/dot"}>회사1</Link></li>
                                     
                                 </ul>
                             </div>
                         </li>
-                        <li><Link to={"/contactme"}>- Contact ME</Link></li>
+                        <li><Link to={"/portfolio/contactme"}>- Contact ME</Link></li>
                     </ul>
                 </div>
 
