@@ -68,14 +68,20 @@
 }
 
 /*좌측메뉴 열림*/
+.reflect{transform: scaleY(-1); transition: .3s;}
 .lm_menu_wrap{
     display: none;
 }
 .lm_menu_wrap>ul>li{
-    margin-top: 15px;
-}
-.lm_menu_wrap>ul>li span{
+    margin-top: 20px;
     color: #fff;
+    cursor: pointer;
+}
+.lm_menu_wrap>ul>li .try_set{
+    color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+    transition: .3s;
 }
 .lm_menu_wrap_show{
     margin-top: 100px;
@@ -86,6 +92,21 @@
 }
 .lm_menu_wrap_show a{
     color: #fff;
+}
+.lm_shelf{
+    display: none;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.lm_shelf ul li{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.lm_shelf_show{
+    display: inherit;
 }
 /*햄버거*/
 .hamb_menu{
@@ -184,7 +205,6 @@
 }
 .hd_wrap_show{
     box-shadow: 0 0 0 0;
-    height: 100%;
 }
 .hd_cnt{
     width: 100%;
@@ -195,7 +215,8 @@
     position: relative;
 }
 .hd_cnt_show{
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
+    position: fixed;
 }
 .ic_domilogo{
     position:absolute;
@@ -218,12 +239,51 @@
     height: 50px;
 }
 .hd_icon_wrap svg{
-    color: #000;
+    color: #fff;
     font-size: 36px;
     cursor: pointer;
 }
 .hd_icon_wrap svg path{
-    color: #000;
+    color: #fff;
+}
+.hd_menu_wrap{
+    display: none;
+}
+.hd_menu_wrap>ul>li{
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.hd_menu_wrap>ul>li .try_set{
+    color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+    transition: .3s;
+}
+.hd_menu_wrap_show{
+    margin-top: 100px;
+    display: inherit;
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+}
+.hd_menu_wrap_show a{
+    color: #fff;
+}
+.hd_shelf{
+    display: none;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.hd_shelf ul li{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.hd_shelf_show{
+    display: inherit;
 }
 /*헤더햄버거*/
 .hd_hamb_menu{
@@ -251,6 +311,7 @@
         cursor:pointer;
         
     }
+    
     /* span 으로 햄버거 만들기  
         absolute 주고 아래에 한 줄씩 위치 처리
     */
@@ -262,6 +323,9 @@
         background-color: #787878;
         transition:all .35s;
         position:absolute;
+    }
+    .hd_hamb_menu_show+label>span{
+        background-color: #fff;
     }
     /* span 햄버거 한 줄 한 줄 처리 */
 

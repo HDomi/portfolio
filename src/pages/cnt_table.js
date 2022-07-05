@@ -1,11 +1,21 @@
 import React from 'react';
-
+import {
+    Routes,
+    Route,
+  } from "react-router-dom";
 import './cnt.css';
 import CntTest from "./cnts/cnttest.js";
+import CntTest2 from "./cnts/cnttest2.js";
 
 function CntTable(){
     return(
-        <CntTest />
+        <Routes>
+            <Route path="/" >
+              <Route index element={<CntTest />} />
+              <Route path="/homepage" element={<CntTest />} />
+              <Route path="/profile" element={<CntTest2 />} />
+            </Route>
+        </Routes>  
     );
 }
 

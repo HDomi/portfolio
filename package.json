@@ -2,7 +2,7 @@
   "name": "domi",
   "version": "0.1.5",
   "private": true,
-  "homepage": "http://hdomi.github.io/portfolio",
+  "homepage": "https://hdomi.github.io/portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",

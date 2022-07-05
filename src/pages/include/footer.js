@@ -1,11 +1,12 @@
 import React from "react";
 import './left_foot.css';
-
+import { Outlet } from "react-router-dom";
 
 const footer =() => {
     return(
         <footer className="all_footer">
             <p>H.J.Y _ Domi Portfolio<br/>© CopyRight BY Domi. ALL RIGHTS RESERVED.</p>
+            <Outlet/>
         </footer>
     )
     

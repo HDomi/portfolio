@@ -1,7 +1,5 @@
 import React from "react";
 import './cnt.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faReact } from "@fortawesome/free-brands-svg-icons";
 
 
 const CntTest =() => {
@@ -12,7 +10,7 @@ const CntTest =() => {
                   <div className="tit_line"></div>
                   <div className="cnt_sub_tit">서브타이틀</div>
                   <div className="cnt_sec">
-                      asdasdasd커밋테스트2
+                      페이지전환1
                   </div>
                 </div>
             </div>
