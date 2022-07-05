@@ -1,6 +1,6 @@
 import './left_foot.css';
 import React,{useState} from "react";
-import { BrowserRouter, Link, Outlet } from "react-router-dom"; //링크걸기
+import { Link, Outlet } from "react-router-dom"; //링크걸기
 import logo_b from "../../img/ic_dmlogo_b.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faReact } from "@fortawesome/free-brands-svg-icons";
@@ -31,14 +31,14 @@ const Header =() => {
                     </label>
                 </>
       
-                <Link to={"/login"}><img className="ic_domilogo ic_dl" alt="ic_domilogo" src={logo_b} width="45x"/></Link>
+                <Link to={"/login"}><img className="ic_domilogo ic_dl hd_domilogo" alt="ic_domilogo" src={logo_b} width="45x"/></Link>
        
                 <div className={"hd_menu_wrap " + (hamOpen ? "hd_menu_wrap_show" : null)}>
                     <ul>
-                        <li><Link to={"/portfolio/main"}>- Homepage</Link></li>
+                        <li><Link to={"/portfolio/"}>- Homepage</Link></li>
                         <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
                         <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : null)}> ▼</div>
-                            <div className={"webpub_sh " + "hd_shelf " + (webpubOpen ? "hd_shelf_show" : null)}>
+                            <div className={"webpub_sh hd_shelf " + (webpubOpen ? "hd_shelf_show" : null)}>
                                 <ul>
                                     <li>└ <Link to={"/portfolio/wp/self"}>☆ 개인_프로젝트</Link></li>
                                     <li>└ <Link to={"/portfolio/wp/dot"}>회사1</Link></li>
@@ -47,11 +47,11 @@ const Header =() => {
                             </div>
                         </li>
                         <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : null)}> ▼</span>
-                            <div className={"webde_sh " + "hd_shelf " + (webdeOpen ? "hd_shelf_show" : null)}>
+                            <div className={"webde_sh hd_shelf " + (webdeOpen ? "hd_shelf_show" : null)}>
                                 <ul>
                                     <li>└ <Link to={"/portfolio/wd/self"}>☆ 개인_프로젝트</Link></li>
                                     <li>└ <Link to={"/portfolio/wd/dot"}>회사1</Link></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>

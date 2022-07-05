@@ -1,7 +1,7 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /*좌측메뉴*/
 .lm_wrap{
-    min-width: 350px;
+    min-width: 450px;
     min-height: 100%;
     background: #fff;
     position: fixed;
@@ -11,11 +11,11 @@
     background-attachment: fixed;
 }
 .lm_wrap_show{
-    width: 550px;
+    width:700px;
     box-shadow: 0 0px 37px -8px #000;
 }
 .back_lm{
-    min-width: 350px;
+    min-width: 450px;
     min-height: 100%;
 }
 .lm_cnt{
@@ -198,7 +198,7 @@
 .hd_wrap{
     box-shadow: 0 -35px 40px 7px #000;
     width: 100%;
-    height: 65px;
+    height: 55px;
     background: #fff;
     position: relative;
     z-index: 997;
@@ -227,6 +227,10 @@
     top: 15px;
     z-index: 999;
 }
+.hd_domilogo{
+    top: 8px;
+    right: 15px;
+}
 .hd_icon_wrap{
     position: absolute;
     bottom: 100px;
@@ -251,6 +255,7 @@
 }
 .hd_menu_wrap>ul>li{
     margin-top: 20px;
+    margin-left: 15px;
     color: #fff;
     cursor: pointer;
 }
@@ -306,8 +311,8 @@
         width:2.5rem;
         height:2rem;
         position:absolute;
-        left: 20px;
-        top: 15px;
+        left: 15px;
+        top: 12px;
         cursor:pointer;
         
     }

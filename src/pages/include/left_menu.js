@@ -45,10 +45,10 @@ const LeftMenu =() => {
         
             <div className={"lm_menu_wrap " + (hamOpen ? "lm_menu_wrap_show" : null)}>
                 <ul>
-                    <li><Link to={"/portfolio/main"}>- Homepage</Link></li>
+                    <li><Link to={"/portfolio/"}>- Homepage</Link></li>
                     <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
                     <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : null)}> ▼</div>
-                        <div className={"webpub_sh " + "lm_shelf " + (webpubOpen ? "lm_shelf_show" : null)}>
+                        <div className={"webpub_sh lm_shelf " + (webpubOpen ? "lm_shelf_show" : null)}>
                             <ul>
                                 <li>└ <Link to={"/portfolio/wp/self"}>☆ 개인_프로젝트</Link></li>
                                 <li>└ <Link to={"/portfolio/wp/dot"}>회사1</Link></li>
@@ -57,7 +57,7 @@ const LeftMenu =() => {
                         </div>
                     </li>
                     <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : null)}> ▼</span>
-                        <div className={"webde_sh " + "lm_shelf " + (webdeOpen ? "lm_shelf_show" : null)}>
+                        <div className={"webde_sh lm_shelf " + (webdeOpen ? "lm_shelf_show" : null)}>
                             <ul>
                                 <li>└ <Link to={"/portfolio/wd/self"}>☆ 개인_프로젝트</Link></li>
                                 <li>└ <Link to={"/portfolio/wd/dot"}>회사1</Link></li>
