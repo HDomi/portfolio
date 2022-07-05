@@ -35,7 +35,7 @@ const Header =() => {
        
                 <div className={"hd_menu_wrap " + (hamOpen ? "hd_menu_wrap_show" : null)}>
                     <ul>
-                        <li><Link to={"/portfolio/homepage"}>- Homepage</Link></li>
+                        <li><Link to={"/portfolio/main"}>- Homepage</Link></li>
                         <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
                         <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : null)}> ▼</div>
                             <div className={"webpub_sh " + "hd_shelf " + (webpubOpen ? "hd_shelf_show" : null)}>
