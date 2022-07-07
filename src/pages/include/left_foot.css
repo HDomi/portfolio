@@ -9,10 +9,12 @@
     background: url(../../img/left_mn_bg.jpg)no-repeat;
     background-position:center;
     background-attachment: fixed;
+    transition: .3s;
 }
 .lm_wrap_show{
-    width:700px;
+    width: 700px;
     box-shadow: 0 0px 37px -8px #000;
+    transition: .3s;
 }
 .back_lm{
     min-width: 450px;
@@ -50,6 +52,11 @@
 }
 .profile_img_sec{
     margin-top: 185px;
+}
+.profile_img_sec2{
+    margin-top: -65px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 .profile_img_sec_n{
     display: none;
