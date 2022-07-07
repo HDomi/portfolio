@@ -9,10 +9,12 @@ import CntTest from "./cnts/cnttest.js";
 
 function CntTable(){
     return(
-        <Routes>         
-            <Route path="/" element={<Main />} />
-            <Route path="/portfolio/" element={<Main />} />
-            <Route path="/portfolio/profile" element={<CntTest />} />       
+        <Routes>
+            <Route path="/" >
+              <Route path="/" element={<Main />} />
+              <Route path="/portfolio/" element={<Main />} />
+              <Route path="/portfolio/profile" element={<CntTest />} />
+            </Route>
         </Routes>  
     );
 }
