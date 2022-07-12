@@ -23,12 +23,23 @@
     color: #8f8f8f;
   }
   .cnt_sec{
+    overflow:inherit;
+    display: inline-block;
+    max-width: 1000px;
     width: 100%;
     min-height: 600px;
     height: 100%;
     margin-top: 40px;
     margin-bottom: 50px;
     padding: 20px;
+    word-break:break-all;
+  }
+  .text_area{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .cnt_img{
+    margin-top: 30px;
   }
   /*******************미디어쿼리*******************/
   @media (max-width: 1210px){

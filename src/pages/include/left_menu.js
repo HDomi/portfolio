@@ -39,7 +39,7 @@ const LeftMenu =() => {
             <div className={"profile_img_sec " + (hamOpen ? "profile_img_sec_n" : " ")}>
                 <img className="img_profile" alt="프로필이미지" src={profile_img} width="150px"/>
                 <div className="myName">황재영</div>
-                <div className="myName_txt">이건 설명입니다.</div>
+                <div className="myName_txt">황재영의<br/>포트폴리오입니다.<br/><br/>#퍼블리싱<br/><br/>#디자인</div>
             </div>
 
         
@@ -59,8 +59,8 @@ const LeftMenu =() => {
                     <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : " ")}> ▼</span>
                         <div className={"webde_sh lm_shelf " + (webdeOpen ? "lm_shelf_show" : " ")}>
                             <ul>
-                                <li>└ <Link to={"/portfolio/wd/self"}>☆ 개인_프로젝트</Link></li>
-                                <li>└ <Link to={"/portfolio/wd/dot"}>회사1</Link></li>
+                                <li>└ <Link to={"/portfolio/wd/banner"}>배너</Link></li>
+                                <li>└ <Link to={"/portfolio/wd/landing"}>상세페이지/랜딩페이지</Link></li>
                                     
                             </ul>
                         </div>

@@ -5,6 +5,9 @@ import {
   } from "react-router-dom";
 import './cnts/cnt.css';
 import Main from "./main.js";
+import Profile from "./profile.js";
+
+
 import CntTest from "./cnts/cnttest.js";
 
 function CntTable(){
@@ -13,7 +16,7 @@ function CntTable(){
             <Route path="/" >
               <Route path="/" element={<Main />} />
               <Route path="/portfolio/" element={<Main />} />
-              <Route path="/portfolio/profile" element={<CntTest />} />
+              <Route path="/portfolio/profile" element={<Profile />} />
             </Route>
         </Routes>  
     );
