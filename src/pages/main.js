@@ -40,7 +40,7 @@ const circleVariants = {
                     </div>
                     <div className="usehistory_box">
                     <motion.div className="use_box" variants={boxVariants} initial="start" animate="end">
-                        <motion.div className="use_circle" variants={circleVariants} >MAIN</motion.div>
+                        <motion.div className="use_rec" variants={circleVariants} >MAIN</motion.div>
                         
                     </motion.div>
                     </div>

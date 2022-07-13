@@ -55,7 +55,7 @@
 .profile_img_sec2{
     margin-top: -65px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 .profile_img_sec_n{
     display: none;
@@ -215,6 +215,7 @@
 .hd_cnt{
     width: 100%;
     min-height: 100%;
+    height: 100%;
     padding: 7px;
     background: #fff;
     z-index: 998;
@@ -239,7 +240,7 @@
 }
 .hd_icon_wrap{
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -268,7 +269,7 @@
 .hd_menu_wrap>ul>li .try_set{
     color: #fff;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 10px;
     transition: .3s;
 }
 .hd_menu_wrap_show{
