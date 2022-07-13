@@ -1,7 +1,7 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /*좌측메뉴*/
 .lm_wrap{
-    min-width: 450px;
+    width: 450px;
     min-height: 100%;
     background: #fff;
     position: fixed;
@@ -17,7 +17,7 @@
     transition: .3s;
 }
 .back_lm{
-    min-width: 450px;
+    width: 450px;
     min-height: 100%;
 }
 .lm_cnt{
