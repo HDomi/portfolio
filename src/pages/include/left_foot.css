@@ -7,8 +7,6 @@
     position: fixed;
     z-index: 998;
     background: url(../../img/left_mn_bg.jpg)no-repeat;
-    background-position:center;
-    background-attachment: fixed;
     transition: .3s;
 }
 .lm_wrap_show{
