@@ -38,7 +38,6 @@ const Header =() => {
                     <div className="profile_img_sec2">
                         <img className="img_profile" alt="프로필이미지" src={profile_img} width="150px"/>
                         <div className="myName">황재영</div>
-                        <div className="myName_txt">황재영의<br/>포트폴리오입니다.<br/>#퍼블리싱<br/>#디자인</div>
                     </div>
                     <ul>
                         <li><Link to={"/portfolio/"}>- Homepage</Link></li>

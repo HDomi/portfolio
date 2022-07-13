@@ -25,7 +25,7 @@
   .cnt_sec{
     overflow:inherit;
     display: inline-block;
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
     min-height: 600px;
     height: 100%;
@@ -36,10 +36,11 @@
   }
   .text_area{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 18px;
   }
   .cnt_img{
-    margin-top: 30px;
+    margin-top: 40px;
   }
   /*******************미디어쿼리*******************/
   @media (max-width: 1210px){
@@ -53,6 +54,11 @@
 
   @media (max-width: 600px){
     .cnt_wrap{padding: 0 25px 0 25px;}
+  }
+  @media (max-width: 500px){
+    .cnt_tit{font-size: 25px;}
+    .cnt_sub_tit{font-size: 16px;}
+    .text_area{font-size: 16px;}
   }
 
   

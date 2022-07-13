@@ -8,8 +8,6 @@ import Main from "./main.js";
 import Profile from "./profile.js";
 
 
-import CntTest from "./cnts/cnttest.js";
-
 function CntTable(){
     return(
         <Routes>
