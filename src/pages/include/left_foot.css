@@ -17,6 +17,7 @@
     transition: .3s;
 }
 .back_lm{
+    min-width:450px;
     width: 450px;
     min-height: 100%;
 }
