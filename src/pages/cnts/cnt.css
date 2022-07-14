@@ -34,6 +34,10 @@
     padding: 20px;
     word-break:break-all;
   }
+  .cnt_sec2{
+    padding: 0!important;
+    max-width: 1000px!important;
+  }
   .text_area{
     width: 100%;
     margin-top: 40px;
