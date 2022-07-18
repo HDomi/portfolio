@@ -7,7 +7,8 @@ class Desingbn extends Component {
         const menus = [
             "1", "2", "3", "4",
             "5", "6", "7", "8",
-            "9", "10", "11", "12"
+            "9", "10", "11", "12",
+            "13", "14"
         ]
         const menuList = menus.map((menu, index) => (
             <div className="dg_cnt_wrap" key={index} onClick={() => window.open(process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg', '_blank', 'height=300px', 'width=760px')}>

@@ -106,3 +106,52 @@
 @media (max-width: 550px){
     .design_banner_sec{margin-bottom: 50px;}
   }
+
+
+/*프로필*/
+.ex_card_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cnt_in_tit{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card{
+    display: flex;
+    margin-top: 15px;
+}
+.card_tit{
+    font-size: 15px;
+    font-weight: bold;
+}
+.ro_box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #000;
+    transition:0.15s ease-in;
+    margin-right: 5px;
+}
+        
+.ro_box:hover {
+    background: #070977;
+    transform: rotate(45deg);
+}
+.history_wrap{
+    margin-top: 60px;
+}
+@media (max-width: 770px){
+    .ex_card_wrap{display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+  }
+  @media (max-width: 400px){
+    .card_tit{
+        font-size: 13px;
+    }
+  }
