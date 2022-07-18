@@ -97,6 +97,9 @@
 @media (max-width: 1150px){
     .dg_cnt_wrap{padding: 5px;}
   }
+  @media (max-width: 800px){
+    .cnt_inner_wrap{display: block;}
+  }
 @media (max-width: 650px){
     .dg_cnt_txt{font-size: 14px;}
   }
