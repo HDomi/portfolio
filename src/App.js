@@ -13,11 +13,11 @@ const App = () => {
       <div className="wrap">
         <div className="back_lm"></div>
         <LeftMenu />
-          <body className="app-body">
+          <div className="app-body">
             <Header />
             <CntTable />
             <Footer />
-          </body>
+          </div>
       </div>
     </div>
 

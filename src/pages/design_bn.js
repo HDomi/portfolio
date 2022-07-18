@@ -1,59 +1,39 @@
 import React, { Component } from 'react';
 import './cnts/cnt.css';
-import testimg from "../img/banner/1.jpg";
 
 class Desingbn extends Component {
     
     render() {
-    return(
-        <div className="cnt_wrap">
-                <div className="cnt">
-                  <div className="cnt_tit">배너 디자인</div>
-                  <div className="tit_line"></div>
-                  <div className="cnt_sub_tit">Banner_Design</div>
-                  <div className="cnt_sec cnt_sec2 design_banner_sec">
-                      <div className="cnt_inner_wrap">
-
-                            <div className="dg_cnt_wrap">
-                                <div className="dg_cnt">
-                                    <img className="test" alt="test" src={testimg}/>
-                                    <div className="dg_cnt_txt">
-                                        이것은 제목입니다.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="dg_cnt_wrap">
-                                <div className="dg_cnt">
-                                    <img className="test" alt="test" src={testimg}/>
-                                    <div className="dg_cnt_txt">
-                                        이것은 제목입니다.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="dg_cnt_wrap">
-                                <div className="dg_cnt">
-                                    <img className="test" alt="test" src={testimg}/>
-                                    <div className="dg_cnt_txt">
-                                        이것은 제목입니다.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="dg_cnt_wrap">
-                                <div className="dg_cnt">
-                                    <img className="test" alt="test" src={testimg}/>
-                                    <div className="dg_cnt_txt">
-                                        이것은 제목입니다.
-                                    </div>
-                                </div>
-                            </div>
-
-                      </div>
-                  </div>
+        const menus = [
+            "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+        ]
+        const menuList = menus.map((menu, index) => (
+            <div className="dg_cnt_wrap" key={index}>
+                <div className="dg_cnt">
+                    <img className="test" alt="배너사진" src={process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg'}/>
+                    <div className="dg_cnt_txt">
+                        클릭하여 자세히 보기
+                    </div>
                 </div>
             </div>
+        ));
+
+    return(
+        <div className="cnt_wrap">
+            <div className="cnt">
+                <div className="cnt_tit">배너 디자인</div>
+                <div className="tit_line"></div>
+                <div className="cnt_sub_tit">Banner_Design / 이전 작업물 중 일부를 첨부하였습니다.</div>
+                <div className="cnt_sec cnt_sec2 design_banner_sec">
+                    <div className="cnt_inner_wrap">    
+                        {menuList}
+                    </div>
+                    <div className="boxdot"></div><br/>
+                    <div className="boxdot"></div><br/>
+                    <div className="boxdot"></div>
+                </div>
+            </div>
+        </div>
     )
     }
 }
