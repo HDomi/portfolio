@@ -1,6 +1,6 @@
 {
   "name": "domi",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "homepage": "https://hdomi.github.io/portfolio",
   "dependencies": {
@@ -22,6 +22,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
+    "vanilla-tilt": "^1.7.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -53,5 +54,4 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
-  
 }

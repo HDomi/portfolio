@@ -16,7 +16,7 @@ const App = () => {
     //1초 뒤에 실행되는 코드들이 담겨 있는 함수     
       setTimeout(()=>{
         setReady(false)
-        },1500)
+        },2500)
     },[])
     
   return ready ? <Loading/> : ( 

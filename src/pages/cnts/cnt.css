@@ -11,18 +11,20 @@
     font-size: 30px;
     font-weight: 900;
     margin-top: 100px;
+    color: #fff;
   }
   .tit_line{
     width: 100%;
-    background: #606060;
+    background: #fff;
     height: 1px;
     margin: 15px 0 10px 0;
   }
   .cnt_sub_tit{
     font-size: 17px;
-    color: #8f8f8f;
+    color: #fff;
   }
   .cnt_sec{
+    color: #fff;
     overflow:inherit;
     display: inline-block;
     max-width: 800px;
@@ -39,11 +41,13 @@
     max-width: 1000px!important;
   }
   .text_area{
+    color: #fff;
     width: 100%;
     margin-top: 40px;
     font-size: 18px;
   }
   .cnt_img{
+    color: #fff;
     margin-top: 40px;
   }
   /*******************미디어쿼리*******************/

@@ -1,28 +1,11 @@
-import {React,useRef} from "react";
+import {React} from "react";
 import './cnts/cnt.css';
 import '../App.css';
 import './pages.css';
 import react18 from "../img/react18.png";
-import { motion } from 'framer-motion';
 
 const Main =() => {
 
-const boxVariants = {
-    start: {opacity: 0,scale: 0.5,},
-    end: {opacity: 1,scale: 1,transition: 
-    {
-        type: "spring",
-        duration: 0.5,
-        bounce: 0.5,
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-const circleVariants = {
-    start: {opacity: 0,y: 20,},
-    end: {opacity: 1,y: 0,},
-};
     return(
         <div className="cnt_wrap">
             <div className="cnt">
@@ -35,15 +18,7 @@ const circleVariants = {
                         계획했습니다.<br/><br/> 그리하여 디자인 시작.
                     </div>
                     <div dangerouslySetInnerHTML={{ __html: "<iframe style='border: 1px solid rgba(0, 0, 0, 0.1); margin-top:40px; border-radius:8px;' width='100%' height='350px' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FdwJcOkbVxk5F0HqIv46HxW%2FDomi_Page' allowfullscreen/>"}} />
-                    <div className="text_area">
-                        피그마를 통해 디자인을 하였으니 전체적인 흐름도를 한번 더 정리합니다.
-                    </div>
-                    <div className="usehistory_box">
-                    <motion.div className="use_box" variants={boxVariants} initial="start" animate="end">
-                        <motion.div className="use_rec" variants={circleVariants} >MAIN</motion.div>
-                        
-                    </motion.div>
-                    </div>
+                    
                     <div className="text_area">
                         <b>평소에는 일반적인 html, css, js를 통해 만들었지만</b> 이번엔<br/>리액트를 통해 만들어보도록 합니다.
                     </div>

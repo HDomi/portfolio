@@ -15,7 +15,7 @@ class Desingbn extends Component {
                 <div className="dg_cnt">
                     <img className="test" alt="배너사진" src={process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg'}/>
                     <div className="dg_cnt_txt">
-                        클릭하여 새 창으로 보기
+                        &lt; 클릭하여 새 창으로 보기 &gt;
                     </div>
                 </div>
             </div>

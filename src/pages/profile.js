@@ -2,9 +2,11 @@ import {React} from "react";
 import './cnts/cnt.css';
 import '../App.css';
 import './pages.css';
-
+import VanillaTilt from 'vanilla-tilt';
 const Profile =() => {
-    
+    const elements = document.querySelectorAll(".p_card");
+    VanillaTilt.init(elements);
+
     return(
         <div className="cnt_wrap">
             <div className="cnt">
@@ -36,6 +38,40 @@ const Profile =() => {
                             <div className="tit_line"></div>
                             <div className="history_wrap">
                                 <div className="cnt_in_tit">- 히스토리 -</div>
+                                <div className="p_container">
+                                    <div className="p_card">
+                                        <div className="p_content">
+                                            <h2>01</h2>
+                                            <h3>고등학교 재학 당시</h3>
+                                            <p>용인고등학교App 개발</p>
+                                            <div className="p_card_btn">June 2016.</div>
+                                        </div>
+                                    </div>
+                                    <div className="p_card">
+                                        <div className="p_content">
+                                            <h2>02</h2>
+                                            <h3>국제대학교</h3>
+                                            <p>컴퓨터공학과 졸업</p>
+                                            <div className="p_card_btn">February 2021.</div>
+                                        </div>
+                                    </div>
+                                    <div className="p_card">
+                                        <div className="p_content">
+                                            <h2>03</h2>
+                                            <h3>두드림 컴퓨터<br/>아카데미</h3>
+                                            <p>웹디자이너 / 웹퍼블리셔<br/>양성과정 교육 수료</p>
+                                            <div className="p_card_btn">August 2021.</div>
+                                        </div>
+                                    </div>
+                                    <div className="p_card">
+                                        <div className="p_content">
+                                            <h2>04</h2>
+                                            <h3>닷네임코리아</h3>
+                                            <p>디자인팀 팀장<br/>전반적인 디자인 및 퍼블리싱</p>
+                                            <div className="p_card_btn">asd</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>       
                     </div>

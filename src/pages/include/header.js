@@ -1,7 +1,7 @@
 import './left_foot.css';
 import React,{useState} from "react";
 import { Link, Outlet } from "react-router-dom"; //링크걸기
-import logo_b from "../../img/ic_dmlogo_b.png";
+import logo_w from "../../img/ic_dmlogo_w.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faReact } from "@fortawesome/free-brands-svg-icons";
 import profile_img from "../../img/profile_img.png";
@@ -31,7 +31,7 @@ const Header =() => {
                     </label>
                 </>
       
-                <Link to={"/login"}><img className="ic_domilogo ic_dl hd_domilogo" alt="ic_domilogo" src={logo_b} width="45x"/></Link>
+                <Link to={"/login"}><img className="ic_domilogo ic_dl hd_domilogo" alt="ic_domilogo" src={logo_w} width="45x"/></Link>
                 
                 
                 <div className={"hd_menu_wrap " + (hamOpen ? "hd_menu_wrap_show" : " ")}>
