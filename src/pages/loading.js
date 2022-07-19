@@ -23,7 +23,7 @@ const Loading =() => {
     return (
             <Background>
                 <LoadingText>로딩중입니다ㆍㆍㆍㆍㆍ</LoadingText>
-                <img src={Spinner} alt="로딩중" width="5%" />
+                <img src={Spinner} alt="로딩중" width="150px" />
             </Background>
             );
         };
