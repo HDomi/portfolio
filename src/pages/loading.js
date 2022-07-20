@@ -20,6 +20,7 @@ const Loading =() => {
         text-align: center;
         font-weight:bold;
         margin-top:90px;
+        color:#080f2a;
     `;
     const LoadingText2 = styled.div`
         text-align: center;
