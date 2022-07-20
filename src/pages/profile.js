@@ -4,6 +4,8 @@ import '../App.css';
 import './pages.css';
 import Tilt from 'react-vanilla-tilt';
 
+import profile_all from "../img/profile_all.jpg";
+
 const Profile =() => {
 
     return(
@@ -14,6 +16,22 @@ const Profile =() => {
                 <div className="cnt_sub_tit">Introduce Myself</div>
                 <div className="cnt_sec prof_sec">
                     <div className="text_area">
+                        <div className="cnt_in_tit">Myself</div>
+                        <div className="prof_wrap">
+                            <Tilt style={{}}>
+                                <img className="img_profile_all" alt="프로필이미지" src={profile_all} />
+                            </Tilt>
+                            <div className="prof_txt_sec">
+                                <p class="top_p"><b>이름</b> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;황재영</p>
+                                <p><b>생년월일</b> : 1998.05.27(25세)</p>
+                                <p><b>연락처</b> : &nbsp;&nbsp;&nbsp;&nbsp;010-3892-8331</p>
+                                <p><b>이메일</b> : hwangjae1139@naver.com</p>
+                                <p>간단한 설명글인데 여따가 짧게 뭐라고쓰지</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text_area">
+                        <div className="cnt_in_tit">Experience</div>
                         <div className="cnt_in_wrap">
                             <div className="ex_card_wrap">
                                 <div className="card">
@@ -37,7 +55,7 @@ const Profile =() => {
                             <div className="history_wrap">
                             
                                 
-                                <div className="cnt_in_tit">- History -</div>
+                                <div className="cnt_in_tit">History</div>
                                 <div className="p_container">
                                     <Tilt style={{}}>
                                         <div className="p_card">

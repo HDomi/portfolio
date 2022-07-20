@@ -1,9 +1,10 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
 body{background: linear-gradient( -45deg, #161623, #30304b);}
 b{color:#fff;}
 *{margin: 0; padding: 0; 
   list-style: none; 
-  color: #393939; 
+  color: #fff; 
   font-family: 나눔스퀘어, 'NanumSquare', sans-serif; 
   -ms-user-select: none; 
   -moz-user-select: -moz-none;

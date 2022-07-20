@@ -4,8 +4,10 @@ import '../App.css';
 import './pages.css';
 import react18 from "../img/react18.png";
 
-const Main =() => {
+import { default as useScrollFadeIn } from '../hooks/useScrollFadeIn';
 
+const Main =() => {
+    const animatedItem = useScrollFadeIn('up', 1, 0);
     return(
         <div className="cnt_wrap">
             <div className="cnt">
@@ -23,7 +25,7 @@ const Main =() => {
                         <b>평소에는 일반적인 html, css, js를 통해 만들었지만</b> 이번엔<br/>리액트를 통해 만들어보도록 합니다.
                     </div>
                     <img className="cnt_img react18png" alt="리액트18" src={react18}/>
-                    <div className="text_area">
+                    <div className="text_area" {...animatedItem}>
                         <b>리액트 버전은 18버전</b>을 사용하기로 했습니다.<br/>
                         사실상 멘땅에 헤딩인지라 자료가 많은 이전버전을 사용하는게 옳다고 생각하나<br/>
                         변화하는 툴과 시장에 적응하는 것 또한 개발자의 역량이라 생각하기 때문에<br/>

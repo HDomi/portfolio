@@ -3,7 +3,7 @@ import React,{useState} from "react";
 import { Link, Outlet } from "react-router-dom"; //링크걸기
 import logo_w from "../../img/ic_dmlogo_w.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import profile_img from "../../img/profile_img.png";
 
 const Header =() => {
@@ -45,8 +45,8 @@ const Header =() => {
                         <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : " ")}> ▼</div>
                             <div className={"webpub_sh hd_shelf " + (webpubOpen ? "hd_shelf_show" : " ")}>
                                 <ul>
-                                    <li>└ <Link to={"/portfolio/wp/self"}>☆ 개인_프로젝트</Link></li>
-                                    <li>└ <Link to={"/portfolio/wp/dot"}>회사1</Link></li>
+                                    <li>└ <Link to={"/portfolio/wp/self"}>ㅁㅁㅁㅁㅁㅁㅁㅁ</Link></li>
+                                    <li>└ <Link to={"/portfolio/wp/dot"}>ㅁㅁㅁㅁㅁㅁㅁㅁ</Link></li>
                                     
                                 </ul>
                             </div>
@@ -64,7 +64,6 @@ const Header =() => {
                     </ul>
                     <div className="hd_icon_wrap">
                         <FontAwesomeIcon icon={faGithub} className="fa_lm_style" onClick={() => window.open('https://github.com/HDomi/portfolio', '_blank')}/>
-                        <FontAwesomeIcon icon={faReact} className="fa_lm_style"/>
                         <FontAwesomeIcon icon={faInstagram} className="fa_lm_style"/>
                     </div>
                 </div>

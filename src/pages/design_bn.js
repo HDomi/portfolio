@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './cnts/cnt.css';
+
 const Desingbn = () => {
 
     const menus = [
         "1", "2", "3", "4",
         "5", "6", "7", "8",
         "9", "10", "11", "12",
-        "13", "14"
+        "13", "14", "15", "16"
     ]
     const menuList = menus.map((menu, index) => (
         <div className="dg_cnt_wrap" key={index} id={menu} onClick={() => window.open(process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg', '_blank', 'height=300px', 'width=760px')}>
