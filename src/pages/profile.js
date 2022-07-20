@@ -15,7 +15,6 @@ const Profile =() => {
                 <div className="cnt_sec prof_sec">
                     <div className="text_area">
                         <div className="cnt_in_wrap">
-                            <div className="cnt_in_tit">- 자격증 -</div>
                             <div className="ex_card_wrap">
                                 <div className="card">
                                     <div className="ro_box"></div>
@@ -38,9 +37,9 @@ const Profile =() => {
                             <div className="history_wrap">
                             
                                 
-                                <div className="cnt_in_tit">- 히스토리 -</div>
+                                <div className="cnt_in_tit">- History -</div>
                                 <div className="p_container">
-                                    <Tilt Style="none;">
+                                    <Tilt style={{}}>
                                         <div className="p_card">
                                             <div className="p_content">
                                                 <h2>01</h2>
@@ -50,7 +49,7 @@ const Profile =() => {
                                             </div>
                                         </div>
                                     </Tilt>
-                                    <Tilt Style="none;">
+                                    <Tilt style={{}}>
                                         <div className="p_card">
                                             <div className="p_content">
                                                 <h2>02</h2>
@@ -60,7 +59,7 @@ const Profile =() => {
                                             </div>
                                         </div>
                                     </Tilt>
-                                    <Tilt Style="none;">
+                                    <Tilt style={{}}>
                                         <div className="p_card">
                                             <div className="p_content">
                                                 <h2>03</h2>
@@ -70,13 +69,13 @@ const Profile =() => {
                                             </div>
                                         </div>
                                     </Tilt>
-                                    <Tilt Style="none;">
+                                    <Tilt style={{}}>
                                         <div className="p_card">
                                             <div className="p_content">
                                                 <h2>04</h2>
                                                 <h3>닷네임코리아</h3>
                                                 <p>디자인팀 팀장<br/>전반적인 디자인 및 퍼블리싱</p>
-                                                <div className="p_card_btn">asd</div>
+                                                <div className="p_card_btn">Oct 2021. ~<br/>Oct 2022.</div>
                                             </div>
                                         </div>
                                     </Tilt>

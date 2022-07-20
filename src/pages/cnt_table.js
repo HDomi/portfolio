@@ -8,7 +8,7 @@ import Main from "./main.js";
 import Profile from "./profile.js";
 
 import Desingbn from './design_bn';
-import Cnttest from './cnts/cnttest';
+import LandingPage from './landingpage';
 
 
 function CntTable(){
@@ -20,7 +20,7 @@ function CntTable(){
               <Route path="/portfolio/profile" element={<Profile />} />
 
               <Route path="/portfolio/wd/banner" element={<Desingbn />} />
-              <Route path="/portfolio/wd/Landing" element={<Cnttest />} />
+              <Route path="/portfolio/wd/Landing" element={<LandingPage />} />
             </Route>
         </Routes>  
     );
