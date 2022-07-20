@@ -87,6 +87,11 @@
     color: #ff1fb4;
     font-family: 'Stint Ultra Expanded', cursive;
 }
+.cnt_in_tit_sub{
+    color: #fff;
+    font-size: 13px;
+    margin-top: -30px;
+}
 .card{
     display: flex;
     margin-top: 15px;

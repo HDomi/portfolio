@@ -56,6 +56,7 @@ const Profile =() => {
                             
                                 
                                 <div className="cnt_in_tit">History</div>
+                                <div className="cnt_in_tit_sub">Hover on Card !</div>
                                 <div className="p_container">
                                     <Tilt style={{}}>
                                         <div className="p_card">
