@@ -1,5 +1,5 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-body{background: #161623;}
+body{background: linear-gradient( -45deg, #161623, #30304b);}
 b{color:#fff;}
 *{margin: 0; padding: 0; 
   list-style: none; 

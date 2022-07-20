@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './cnts/cnt.css';
-
 class Desingbn extends Component {
     
     render() {
@@ -20,7 +19,6 @@ class Desingbn extends Component {
                 </div>
             </div>
         ));
-
     return(
         <div className="cnt_wrap">
             <div className="cnt">
@@ -33,7 +31,6 @@ class Desingbn extends Component {
                     </div>
                     <div className="boxdot"></div><br/>
                     <div className="boxdot"></div><br/>
-                    <div className="boxdot"></div>
                 </div>
             </div>
         </div>
