@@ -27,7 +27,7 @@ const Profile =() => {
                                 <p><b>생년월일</b> : 1998.05.27(25세)</p>
                                 <p><b>연락처</b> : &nbsp;&nbsp;&nbsp;&nbsp;010-3892-8331</p>
                                 <p><b>이메일</b> : hwangjae1139@naver.com</p>
-                                <p>간단한 설명글인데 여따가 짧게 뭐라고쓰지</p>
+                                <p>풀스택을 목표로 열심히 달려나가고 있습니다!</p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Profile =() => {
                             
                                 
                                 <div className="cnt_in_tit">History</div>
-                                <div className="cnt_in_tit_sub">Hover on Card !</div>
+                                <div className="cnt_in_tit_sub">Click & Hover on Card !</div>
                                 <div className="p_container">
                                     <Tilt style={{}}>
                                         <div className="p_card">

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 
 class LandingList extends Component {
-    state = {
+    menuState = {
         menu: [
             {
                 id:0,
@@ -56,7 +56,7 @@ class LandingList extends Component {
         return(
             <div className="cnt_inner_wrap2">
                     {
-                        this.state.menu.map((item)=>{
+                        this.menuState.menu.map((item)=>{
                             const {id,title,text} = item
                             return(
                                 <div className="ld_cnt_wrap" >
