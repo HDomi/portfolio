@@ -7,12 +7,13 @@ const Desingbn = () => {
         "1", "2", "3", "4",
         "5", "6", "7", "8",
         "9", "10", "11", "12",
-        "13", "14", "15", "16"
+        "13", "14", "15", "16",
+        "17", "18", "19"
     ]
     const menuList = menus.map((menu, index) => (
         <div className="dg_cnt_wrap" key={index} id={menu} onClick={() => window.open(process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg', '_blank', 'height=300px', 'width=760px')}>
             <div className="dg_cnt">
-                <img className="test" alt="배너사진" src={process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg'}/>
+                <img className="banner_img" alt="배너사진" src={process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg'}/>
                 <div className="dg_cnt_txt">
                     &lt; 클릭하여 새 창으로 보기 &gt;
                 </div>

@@ -12,10 +12,6 @@ const LeftMenu =() => {
     const togglehamMenu = () => {
         hmMenu(hamOpen => !hamOpen); // 햄버거메뉴 열고닫기
     }
-    const [webpubOpen, wpMenu] = useState(false);  
-    const togglewpMenu = () => {
-        wpMenu(webpubOpen => !webpubOpen); // 퍼블리싱 열고닫기
-    }
     const [webdeOpen, wdMenu] = useState(false);  
     const togglewdMenu = () => {
         wdMenu(webdeOpen => !webdeOpen); // 퍼블리싱 열고닫기
@@ -47,15 +43,7 @@ const LeftMenu =() => {
                 <ul>
                     <li><Link to={"/portfolio/"}>- Homepage</Link></li>
                     <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
-                    <li onClick={()=>togglewpMenu()}>- Web_Publishing<div className={"try_set " + (webpubOpen ? "reflect" : " ")}> ▼</div>
-                        <div className={"webpub_sh lm_shelf " + (webpubOpen ? "lm_shelf_show" : " ")}>
-                            <ul>
-                                <li>└ <Link to={"/portfolio/wp/self"}>ㅁㅁㅁㅁㅁㅁㅁㅁ</Link></li>
-                                <li>└ <Link to={"/portfolio/wp/dot"}>ㅁㅁㅁㅁㅁㅁㅁㅁ</Link></li>
-                                    
-                            </ul>
-                        </div>
-                    </li>
+                    <li><Link to={"/portfolio/webpub"}>- Web_Publishing</Link></li>
                     <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : " ")}> ▼</span>
                         <div className={"webde_sh lm_shelf " + (webdeOpen ? "lm_shelf_show" : " ")}>
                             <ul>

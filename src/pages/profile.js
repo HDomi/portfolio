@@ -3,11 +3,12 @@ import './cnts/cnt.css';
 import '../App.css';
 import './pages.css';
 import Tilt from 'react-vanilla-tilt';
-
 import profile_all from "../img/profile_all.jpg";
+import Skills from "./include/skills.js";
 
 const Profile =() => {
-
+    
+    
     return(
         <div className="cnt_wrap">
             <div className="cnt">
@@ -29,6 +30,10 @@ const Profile =() => {
                                 <p>간단한 설명글인데 여따가 짧게 뭐라고쓰지</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="text_area">
+                        <div className="cnt_in_tit">Skills</div>
+                        <Skills />
                     </div>
                     <div className="text_area">
                         <div className="cnt_in_tit">Experience</div>
