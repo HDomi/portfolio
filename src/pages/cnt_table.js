@@ -14,10 +14,12 @@ import LandingPage from './landingpage';
 
 
 function CntTable(){
+  
     return(
         <Routes>
             <Route path="/" >
               <Route path="/" element={<Main />} />
+              <Route path="/*" element={<Main />} />
 
               <Route path="/portfolio/" element={<Main />} />
               <Route path="/portfolio/profile" element={<Profile />} />
