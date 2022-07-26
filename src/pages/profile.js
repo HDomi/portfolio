@@ -9,11 +9,11 @@ import { default as useScrollFadeIn } from '../hooks/useScrollFadeIn'
 
 const Profile =() => {
     const animatedItem = {
-        0: useScrollFadeIn('left', 1, 0),
-        1: useScrollFadeIn('left', 1, 0.2),
-        2: useScrollFadeIn('left', 1, 0.3),
-        3: useScrollFadeIn('left', 1, 0.4),
-        4: useScrollFadeIn('left', 1, 0.5),
+        0: useScrollFadeIn('up', 1, 0),
+        1: useScrollFadeIn('up', 1, 0.2),
+        2: useScrollFadeIn('up', 1, 0.3),
+        3: useScrollFadeIn('up', 1, 0.4),
+        4: useScrollFadeIn('up', 1, 0.5),
       };
     
     return(
