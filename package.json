@@ -1,6 +1,6 @@
 {
   "name": "domi",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "private": true,
   "homepage": "https://hdomi.github.io/portfolio",
   "dependencies": {

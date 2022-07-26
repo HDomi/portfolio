@@ -1,8 +1,29 @@
 import React from 'react';
 import './cnts/cnt.css';
-
+import { default as useScrollFadeIn } from '../hooks/useScrollFadeIn'
 const Desingbn = () => {
-
+    const animatedItem = {
+        0: useScrollFadeIn('up', 1, 0),
+        1: useScrollFadeIn('up', 1, 0.2),
+        2: useScrollFadeIn('up', 1, 0.3),
+        3: useScrollFadeIn('up', 1, 0.4),
+        4: useScrollFadeIn('up', 1, 0.5),
+        5: useScrollFadeIn('up', 1, 0.6),
+        6: useScrollFadeIn('up', 1, 0.7),
+        7: useScrollFadeIn('up', 1, 0.8),
+        8: useScrollFadeIn('up', 1, 0.9),
+        9: useScrollFadeIn('up', 1, 1.0),
+        10: useScrollFadeIn('up', 1, 1.1),
+        11: useScrollFadeIn('up', 1, 1.2),
+        12: useScrollFadeIn('up', 1, 1.3),
+        13: useScrollFadeIn('up', 1, 1.4),
+        14: useScrollFadeIn('up', 1, 1.5),
+        15: useScrollFadeIn('up', 1, 1.6),
+        16: useScrollFadeIn('up', 1, 1.7),
+        17: useScrollFadeIn('up', 1, 1.8),
+        18: useScrollFadeIn('up', 1, 1.9),
+        19: useScrollFadeIn('up', 1, 2.0),
+      };
     const menus = [
         "1", "2", "3", "4",
         "5", "6", "7", "8",
@@ -11,12 +32,9 @@ const Desingbn = () => {
         "17", "18", "19", "20"
     ]
     const menuList = menus.map((menu, index) => (
-        <div className="dg_cnt_wrap" key={index} id={menu} onClick={() => window.open(process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg', '_blank', 'height=300px', 'width=760px')}>
+        <div className="dg_cnt_wrap" {...animatedItem[index]} key={index} id={menu}>
             <div className="dg_cnt">
                 <img className="banner_img" alt="배너사진" src={process.env.PUBLIC_URL + '/img/banner/' + index + '.jpg'}/>
-                <div className="dg_cnt_txt">
-                    &lt; 클릭하여 새 창으로 보기 &gt;
-                </div>
             </div>
         </div>
     ));

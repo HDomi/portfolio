@@ -21,6 +21,7 @@ div{box-sizing: border-box;}
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient( -45deg, #161623, #30304b);
 }
 .wrap{
   display: flex;
@@ -35,45 +36,15 @@ div{box-sizing: border-box;}
   width: 100%;
   min-height: 100%;
 }
-.animation {
-  /* Animation Code */
-  animation: fadein 1s;
-  -moz-animation: fadein 1s; /* Firefox */
-  -webkit-animation: fadein 1s; /* Safari and Chrome */
-  -o-animation: fadein 1s; /* Opera */
-  overflow: hidden;
+#modal-wrap{
+  color: #000;
 }
-@keyframes fadein {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+#modal-wrap svg{
+  font-size: 40px;
+  cursor: pointer;
 }
-@-moz-keyframes fadein { /* Firefox */
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+#modal-wrap svg path{
+ 
 }
 /*메인 sec*/
 
