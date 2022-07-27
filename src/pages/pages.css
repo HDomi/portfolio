@@ -1,5 +1,6 @@
 .main_sec{
-    height: 2800px;
+    max-height: 2800px;
+    height: 100%;
 }
 .prof_sec{
     min-height: 1500px;
@@ -20,6 +21,21 @@ canvas{
 .react18png{
     width: 100%;
     max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+.mb_150{
+    margin-bottom: 150px;
+}
+.main_img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+.main_img2{
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 8px;
 }

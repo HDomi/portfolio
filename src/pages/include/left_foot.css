@@ -194,12 +194,19 @@
     left: 0;
     align-items: center;
     text-align: left;
-    display: flex;
     padding-left: 20px;
     box-shadow: 0 35px 40px 7px #fff;
+    font-size: 16px;
 }
 .all_footer p{
     color: #fff;
+    padding-top: 25px;
+}
+@media (max-width: 365px){
+    .all_footer{
+        font-size: 13px;
+    }
+    
 }
 
 /*헤더*/
