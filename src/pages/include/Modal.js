@@ -26,7 +26,7 @@ function Modal({
   }
 
   useEffect(() => {
-    document.body.style.cssText = `position: fixed; top: -${window.scrollY}px; width:100%;`
+    document.body.style.cssText = `position: fixed; width:100%;`
     return () => {
       const scrollY = document.body.style.top
       document.body.style.cssText = `position: ""; top: "";`
@@ -104,7 +104,7 @@ const ModalInner = styled.div`
 const CloseBtn = styled.div`
     position: absolute;
     z-index: 1000;
-    right: 20px;
+    right: 15px;
     top: 10px;
 `
 

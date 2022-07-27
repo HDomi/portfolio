@@ -49,7 +49,7 @@ const LeftMenu =() => {
                             <ul>
                                 <li>└ <Link to={"/portfolio/wd/banner"}>배너</Link></li>
                                 <li>└ <Link to={"/portfolio/wd/landing"}>상세페이지/랜딩페이지</Link></li>
-                                    
+                                <li>└ <Link to={"/portfolio/wd/pakage"}>패키지 디자인</Link></li>
                             </ul>
                         </div>
                     </li>

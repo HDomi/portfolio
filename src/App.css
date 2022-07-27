@@ -16,6 +16,10 @@ div{box-sizing: border-box;}
 ::-webkit-scrollbar {
   display: none;
 }
+textarea{padding-top:10px;}
+input:focus {outline:none;}
+textarea:focus {outline:none;padding-left: 10px;padding-top:10px;}
+
 /*메인*/
 .App {
   text-align: center;
@@ -44,7 +48,17 @@ div{box-sizing: border-box;}
   cursor: pointer;
 }
 #modal-wrap svg path{
- 
+  color: #fff;
+}
+@media (max-width: 540px){
+  #modal-wrap svg{
+    font-size: 35px;
+
+    cursor: pointer;
+  }
+  #modal-wrap svg path{
+    color: #000;
+  }
 }
 /*메인 sec*/
 

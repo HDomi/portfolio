@@ -14,6 +14,9 @@ const LandingList = () => {
         6: useScrollFadeIn('up', 1, 0.7),
         7: useScrollFadeIn('up', 1, 0.8),
         8: useScrollFadeIn('up', 1, 0.9),
+        9: useScrollFadeIn('up', 1, 1.0),
+        10: useScrollFadeIn('up', 1, 1.1),
+        11: useScrollFadeIn('up', 1, 1.2),
     };
     //랜딩페이지 리스트 아이디 생성
     const landListID = [
@@ -34,33 +37,48 @@ const LandingList = () => {
         },
         {
             id:3,
-            title:"네번째이미지",
-            text:"ddd"
+            title:"무료 웹호스팅 이벤트",
+            text:"웹호스팅 무료 이벤트"
         },
         {
             id:4,
-            title:"다섯번째이미지",
-            text:"eee"
+            title:"무중단 서버이전 이벤트",
+            text:"중단없이 서버를 이전해보세요"
         },
         {
             id:5,
-            title:"여섯번째이미지",
-            text:"fff"
+            title:"하루한끼 검은콩",
+            text:"하루한끼 검은콩의 상세페이지"
         },
         {
             id:6,
-            title:"일곱번째이미지",
-            text:"ggg"
+            title:"G Pro X",
+            text:"G pro X 마우스 상세페이지"
         },
         {
             id:7,
-            title:"여덟번째이미지",
-            text:"hhh"
+            title:"Razer Deathadder V2",
+            text:"Razer Deathadder V2의 상세페이지"
         },
         {
             id:8,
-            title:"아홉번째이미지",
-            text:"iii"
+            title:"Logitech MK875",
+            text:"Logitech MK875의 상세페이지"
+        },
+        {
+            id:9,
+            title:"Microsoft Modern-Mobile-Mouse",
+            text:"Microsoft M-M-M의 상세페이지"
+        },
+        {
+            id:10,
+            title:"Logitech G923",
+            text:"Logitech G923의 상세페이지"
+        },
+        {
+            id:11,
+            title:"Cloud Stinger Core",
+            text:"Cloud Stinger Core의 상세페이지"
         }
     ]
      //랜딩 리스트를 누르면 누른 해당 id가져오게 저장
@@ -77,10 +95,10 @@ const LandingList = () => {
                  return(
                      <div className="ld_cnt_wrap" >
                          <div className="ld_cnt"  {...animatedItem[id]}  onClick={buttonValueSetting}>
-                             <img className="ld_img" alt="랜딩페이지 썸네일" id={id} src={process.env.PUBLIC_URL + '/img/landing/thumnail/' + id + '.jpg'}/>
-                             <div className="ld_cnt_txt">
-                                 제목 : {title} <br/>
-                                 설명 : {text}
+                            <figure><img className="ld_img" alt="랜딩페이지 썸네일" id={id} src={process.env.PUBLIC_URL + '/img/landing/thumnail/' + id + '.jpg'}/></figure>
+                            <div className="ld_cnt_txt">
+                                 ㆍ {title} <br/>
+                                 <p>└ {text}</p>
                              </div>
                          </div>
                      </div>
@@ -99,6 +117,15 @@ const LandingList = () => {
         {id:0},
         {id:1},
         {id:2},
+        {id:3},
+        {id:4},
+        {id:5},
+        {id:6},
+        {id:7},
+        {id:8},
+        {id:9},
+        {id:10},
+        {id:11},
     ]
     //모달팝업 내부 이미지를 map으로 모달리스트 생성
     const landImgModal = landImgId.map((landImgIds) => {

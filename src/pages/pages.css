@@ -43,9 +43,23 @@ canvas{
 }
 .land_img{
     position: relative;
-    width: 60%;
+    width: 40%;
     overflow-y: scroll;
     z-index:1000;
+}
+.land_img::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.land_img::-webkit-scrollbar-thumb {
+    height: 100%; /* 스크롤바의 길이 */
+    background: #217af4; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.land_img::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
 }
 .cnt_inner_wrap2{
     width: 100%;
@@ -62,24 +76,47 @@ canvas{
 .ld_cnt{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .ld_cnt img{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
+/* Blur + Gray Scale */
+.ld_cnt figure img {
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: .18s ease-in-out;
+    transition: .18s ease-in-out;
+  }
+  .ld_cnt figure:hover img {
+    -webkit-filter: grayscale(80%) blur(1px);
+    filter: grayscale(80%) blur(1px);
+  }
+
 .ld_cnt_txt{
     font-weight: normal;
     font-size: 16px;
     color: #fff;
     text-align: left;
 }
+.ld_cnt_txt p {
+    font-size: 14.5px;
+    font-weight: 300;
+    margin-top: 2.3px;
+}
 @media (max-width: 1300px){
     .cnt_inner_wrap2{grid-template-columns: auto auto;}
   }
 @media (max-width: 800px){
     .cnt_inner_wrap2{display: block;}
+  }
+  @media (max-width: 540px){
+    .land_img{
+        width: 100%;
+    }
   }
  
 /*배너디자인*/
@@ -318,4 +355,65 @@ canvas{
         display: inline;
         text-align: center;
     }
+}
+/*contact me*/
+.cnt_tit_contact{
+    text-align: left;
+}
+.cntac_sec{
+    padding: 0;
+    min-height: 1000px;
+    height: 100%;
+    margin-bottom: 150px;
+}
+.cntac_box{
+    margin-top: 30px;
+    width: 100%;
+}
+.cntac_mail *{
+    color: #fff;
+}
+.cntac_mapp{
+    border: 1px solid #161623;
+    border-radius:8px;
+}
+.cntac_mail{
+    display: inline-block;
+    background: #ff1fb41e;
+    width: 100%;
+    border-radius:8px;
+    margin-top: 60px;
+    padding: 10px;
+    border: 1px solid #ff1fb47c;
+}
+.cntac_txtbar{
+    background: #161623;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ff1fb47c;
+}
+.cntac_txtbar::placeholder{
+    color: #fff;
+}
+.txtbar_rec{
+    height: 300px;
+}
+.cntac_btn{
+    border: 1px solid #161623;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    background: linear-gradient( -15deg, #161623, #30304b);
+    border-radius:5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.cntac_btn:hover{
+    background: linear-gradient( -15deg, #30304b, #161623);
 }

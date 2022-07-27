@@ -11,16 +11,15 @@ import Contactme from "./contactme.js";
 
 import Desingbn from './design_bn';
 import LandingPage from './landingpage';
-
+import Pakagedesign from './pakage';
 
 function CntTable(){
-  
+
     return(
         <Routes>
             <Route path="/" >
               <Route path="/" element={<Main />} />
-              <Route path="/*" element={<Main />} />
-
+              
               <Route path="/portfolio/" element={<Main />} />
               <Route path="/portfolio/profile" element={<Profile />} />
               <Route path="/portfolio/webpub" element={<Webpub />} />
@@ -28,7 +27,7 @@ function CntTable(){
 
               <Route path="/portfolio/wd/banner" element={<Desingbn />} />
               <Route path="/portfolio/wd/Landing" element={<LandingPage />} />
-            
+              <Route path="/portfolio/wd/pakage" element={<Pakagedesign />} />
             </Route>
         </Routes>  
     );
