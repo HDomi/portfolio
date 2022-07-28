@@ -25,7 +25,7 @@ function CntTable(){
               <Route path="/portfolio/contactme" element={<Contactme />} />
 
               <Route path="/portfolio/wd/banner" element={<Desingbn />} />
-              <Route path="/portfolio/wd/Landing" element={<LandingPage />} />
+              <Route path="/portfolio/wd/landing" element={<LandingPage />} />
             </Route>
         </Routes>  
     );

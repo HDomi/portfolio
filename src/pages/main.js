@@ -10,11 +10,11 @@ import React from 'react'
 const Main =() => {
     const animatedItem = {
         0: useScrollFadeIn('up', 1, 0),
-        1: useScrollFadeIn('up', 1, 0.2),
-        2: useScrollFadeIn('up', 1, 0.3),
-        3: useScrollFadeIn('up', 1, 0.4),
-        4: useScrollFadeIn('up', 1, 0.5),
-        5: useScrollFadeIn('up', 1, 0.6),
+        1: useScrollFadeIn('up', 1, 0.05),
+        2: useScrollFadeIn('up', 1, 0.1),
+        3: useScrollFadeIn('up', 1, 0.15),
+        4: useScrollFadeIn('up', 1, 0.2),
+        5: useScrollFadeIn('up', 1, 0.25),
       };
     return(
         <div className="cnt_wrap">

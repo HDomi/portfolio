@@ -1,6 +1,7 @@
 .main_sec{
     max-height: 2800px;
     height: 100%;
+    word-break: keep-all;
 }
 .prof_sec{
     min-height: 1500px;
@@ -53,6 +54,7 @@ canvas{
 }
 /*상세페이지디자인*/
 .land_sec{
+    word-break: keep-all;
     height: 100%;
     margin-bottom: 150px;
     text-align: center;
@@ -377,6 +379,7 @@ canvas{
     text-align: left;
 }
 .cntac_sec{
+    word-break: keep-all;
     padding: 0;
     min-height: 1000px;
     height: 100%;
@@ -395,21 +398,22 @@ canvas{
 }
 .cntac_mail{
     display: inline-block;
-    background: #ff1fb41e;
     width: 100%;
     border-radius:8px;
     margin-top: 60px;
     padding: 10px;
-    border: 1px solid #ff1fb47c;
 }
 .cntac_txtbar{
-    background: #161623;
     width: 100%;
     height: 40px;
     margin-bottom: 15px;
     padding-left: 10px;
     box-sizing: border-box;
-    border: 1px solid #ff1fb47c;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.1);
 }
 .cntac_txtbar::placeholder{
     color: #fff;
@@ -424,12 +428,115 @@ canvas{
     margin-top: 30px;
     box-sizing: border-box;
     color: #fff;
-    background: linear-gradient( -15deg, #161623, #30304b);
-    border-radius:5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    background: #ff00aa75;border-radius:5px;
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: 700;
 }
 .cntac_btn:hover{
-    background: linear-gradient( -15deg, #30304b, #161623);
+    background: #ff00aac2
+}
+/*웹퍼블리싱*/
+.webpub_sec{
+    
+    height: 100%;
+    margin-bottom: 150px;
+}
+.cnt_inner_wrap3{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.pub_cnt_wrap{
+    padding: 20px;
+    border-radius: 10px;
+}
+.pub_cnt{
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.15);
+}
+.pub_cnt img{
+    height: 200px;
+    border-radius: 15px;
+    width: 180px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.webpub_txt{
+    word-break: keep-all;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+}
+.webpub_txt p{
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1px;
+    box-sizing: border-box;
+}
+.webpub_txt p span{
+    font-size: 14px;
+}
+.webpub_txt b{
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+.webpub_gyd{
+    font-size: 11px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #ff1fb4;    
+}
+@media (max-width: 1550px){
+    .pub_cnt img{
+        display: none;
+    }
+}
+@media (max-width: 1050px){
+    .pub_cnt img{
+        display: block;
+    }
+}
+@media (max-width: 980px){
+    .cnt_inner_wrap3{
+        display: inline;
+        text-align: center;
+    }
+    .pub_cnt_wrap{
+        display: inline-block;
+        max-width: 600px;
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .pub_cnt{
+        display: inline;
+    }
+    .pub_cnt img{
+        height: auto;
+        width: 100%;
+    }
+    .webpub_txt{
+        min-height: 175px;
+        height: 100%;
+    }
 }
