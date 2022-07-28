@@ -18,7 +18,7 @@ const Webpub =() => {
             title:"편의",
             old:"2021.06 ~ 06",
             des:"양성교육 과정 중 심플함 속 화려한 색감을 표현하기 좋은 한지를 아이템으로 한 쇼핑몰을 만들어 보고 싶었습니다.",
-            link:"https://hwang1139.cafe24.com/html/pnei/main.html",
+            link:"https://hdomi.github.io/pnei/",
             gyd:"100%"
         },
         {
@@ -34,7 +34,7 @@ const Webpub =() => {
             title:"스마트시티 라이브러리",
             old:"2021.12 ~ 01",
             des:"정부지원 사업으로 진행되었던 프로젝트로서 깔끔한 디자인과 퍼블리싱이 관건이었습니다.",
-            link:"ㅁㅁㅁ",
+            link:"https://hdomi.github.io/smartcity/",
             gyd:"100%"
         },
         {
@@ -42,7 +42,7 @@ const Webpub =() => {
             title:"데이터가공 서비스",
             old:"2022.04 ~ 04",
             des:"㈜패턴테크의 첫 런칭 프로젝트로 이미지를 사이트 내에서 쉽게 가공해주는 사이트입니다.",
-            link:"ㅁㅁㅁ",
+            link:"https://hdomi.github.io/datacorp/",
             gyd:"100%"
         },
         {
