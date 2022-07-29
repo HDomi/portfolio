@@ -11,10 +11,10 @@ const Main =() => {
     const animatedItem = {
         0: useScrollFadeIn('up', 1, 0),
         1: useScrollFadeIn('up', 1, 0.05),
-        2: useScrollFadeIn('up', 1, 0.1),
-        3: useScrollFadeIn('up', 1, 0.15),
-        4: useScrollFadeIn('up', 1, 0.2),
-        5: useScrollFadeIn('up', 1, 0.25),
+        2: useScrollFadeIn('up', 1, 0.07),
+        3: useScrollFadeIn('up', 1, 0.09),
+        4: useScrollFadeIn('up', 1, 0.11),
+        5: useScrollFadeIn('up', 1, 0.13),
       };
     return(
         <div className="cnt_wrap">

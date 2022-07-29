@@ -57,7 +57,7 @@ const Webpub =() => {
                     <div className="pub_cnt_wrap" key={id}>
                         <div className="pub_cnt" {...animatedItem[id]} onClick={buttonValueSetting}>
                             <div className="webpub_txt" id={id}>
-                                <b>{title}<div className="webpub_gyd">기여도 : {gyd}</div></b><br/>
+                                <b>{title}<br/><div className="webpub_gyd">기여도 : {gyd}</div></b><br/>
                                 <p>{old}<br/><br/><span>{des}</span></p>
                             </div>
                             <img className="webpub_img" alt="배너사진" src={process.env.PUBLIC_URL + '/img/webpub/thumnail/' + id + '.jpg'}/> 

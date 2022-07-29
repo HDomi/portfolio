@@ -6,17 +6,17 @@ const LandingList = () => {
     //페이드인 애니메이션
     const animatedItem = {
         0: useScrollFadeIn('up', 1, 0),
-        1: useScrollFadeIn('up', 1, 0.2),
-        2: useScrollFadeIn('up', 1, 0.3),
-        3: useScrollFadeIn('up', 1, 0.4),
-        4: useScrollFadeIn('up', 1, 0.5),
-        5: useScrollFadeIn('up', 1, 0.6),
-        6: useScrollFadeIn('up', 1, 0.7),
-        7: useScrollFadeIn('up', 1, 0.8),
-        8: useScrollFadeIn('up', 1, 0.9),
-        9: useScrollFadeIn('up', 1, 1.0),
-        10: useScrollFadeIn('up', 1, 1.1),
-        11: useScrollFadeIn('up', 1, 1.2),
+        1: useScrollFadeIn('up', 1, 0.05),
+        2: useScrollFadeIn('up', 1, 0.1),
+        3: useScrollFadeIn('up', 1, 0.15),
+        4: useScrollFadeIn('up', 1, 0.2),
+        5: useScrollFadeIn('up', 1, 0.25),
+        6: useScrollFadeIn('up', 1, 0.3),
+        7: useScrollFadeIn('up', 1, 0.35),
+        8: useScrollFadeIn('up', 1, 0.4),
+        9: useScrollFadeIn('up', 1, 0.45),
+        10: useScrollFadeIn('up', 1, 0.5),
+        11: useScrollFadeIn('up', 1, 0.55),
     };
     //랜딩페이지 리스트 아이디 생성
     const landListID = [
