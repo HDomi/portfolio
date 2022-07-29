@@ -51,7 +51,7 @@ const Header =() => {
                     </ul>
                     <div className="hd_icon_wrap">
                         <FontAwesomeIcon icon={faGithub} className="fa_lm_style" onClick={() => window.open('https://github.com/HDomi/portfolio', '_blank')}/>
-                        <FontAwesomeIcon icon={faInstagram} className="fa_lm_style"/>
+                        <FontAwesomeIcon icon={faInstagram} className="fa_lm_style" onClick={() => window.open('https://www.instagram.com/domi_web_lab/', '_blank')}/>
                     </div>
                 </div>
 

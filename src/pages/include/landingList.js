@@ -93,7 +93,7 @@ const LandingList = () => {
      const landList = landListID.map((item)=>{
      const {id,title,text} = item
                  return(
-                     <div className="ld_cnt_wrap" >
+                     <div className="ld_cnt_wrap" key={id}>
                          <div className="ld_cnt"  {...animatedItem[id]}  onClick={buttonValueSetting}>
                             <figure><img className="ld_img" alt="랜딩페이지 썸네일" id={id} src={process.env.PUBLIC_URL + '/img/landing/thumnail/' + id + '.jpg'}/></figure>
                             <div className="ld_cnt_txt">

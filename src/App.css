@@ -10,7 +10,8 @@ b{color:#fff;}
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-  user-select: none;}
+  user-select: none;
+  word-break: keep-all;}
 a{text-decoration: none; color: #393939;}
 div{box-sizing: border-box;}
 ::-webkit-scrollbar {
@@ -50,7 +51,14 @@ textarea:focus {outline:none;padding-left: 10px;padding-top:10px;}
 #modal-wrap svg path{
   color: #fff;
 }
-@media (max-width: 540px){
+#modal-wrap2 svg{
+  font-size: 40px;
+  cursor: pointer;
+}
+#modal-wrap2 svg path{
+  color: #fff;
+}
+@media (max-width: 600px){
   #modal-wrap svg{
     font-size: 35px;
 

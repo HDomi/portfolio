@@ -37,7 +37,7 @@ function PubModal({
   return (
     <Portal elementId="modal-root">
       <ModalOverlay visible={visible} />
-      <ModalWrapper id="modal-wrap"
+      <ModalWrapper id="modal-wrap2"
         className={className}
         onClick={maskClosable ? onMaskClick : null}
         tabIndex={-1}
@@ -51,13 +51,13 @@ function PubModal({
   )
 }
 
-Modal.defaultProps = {
+PubModal.defaultProps = {
   visible: false,
   closable: true,
   maskClosable: true,
 }
 
-Modal.propTypes = {
+PubModal.propTypes = {
   visible: PropTypes.bool,
 }
 
@@ -82,7 +82,7 @@ const ModalOverlay = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background: linear-gradient( -45deg, #161623, #30304b);
   z-index: 999;
   
 `
@@ -90,7 +90,7 @@ const ModalOverlay = styled.div`
 const ModalInner = styled.div`
   box-sizing: border-box;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.25);
+  background: linear-gradient( -45deg, #161623, #30304b);
   border-radius: 5px;
   width:100%;
   height:100%;
