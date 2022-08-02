@@ -263,6 +263,7 @@ canvas{
     max-width: 800px;
     flex-wrap: wrap;
     z-index: 1;
+    margin-bottom: 150px;
 }
 .p_container .p_card{
     position: relative;
@@ -284,14 +285,16 @@ canvas{
 .p_container .p_card .p_content{
     padding: 20px;
     text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
+    transform: translateY(0px);
+    opacity: 1;
+    /*transform: translateY(100px);
+    opacity: 0;*/
     transition: 0.5s;
-}
+} /*
 .p_container .p_card:hover .p_content{
     transform: translateY(0px);
     opacity: 1;
-}
+}*/
 .p_container .p_card .p_content h2{
     position: absolute;
     top: -80px;
@@ -320,7 +323,7 @@ canvas{
     border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 .img_profile_all{
     max-width: 290px;
