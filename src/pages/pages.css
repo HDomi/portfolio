@@ -590,8 +590,10 @@ canvas{
     box-sizing: border-box;
 }
 .pub_table tr td{
-    border: 1px solid #fff;
     border-spacing: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff ;
+    padding: 10px;
 }
 .txt_txt_sec{
     padding: 8px;
@@ -603,7 +605,17 @@ canvas{
 .txt_txt_sec2{
     width: 100%;
     font-weight: 300;
+    position: relative;
 }
+.txt_txt_sec2:before {
+    content : "";
+    position: absolute;
+    left : 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height  : 65%;
+    border-left:2px solid #ff1fb4;
+  }
 @media (max-width: 1550px){
     .pub_cnt img{
         display: none;
@@ -640,7 +652,7 @@ canvas{
  
     }
     .des_cnt{
-        height: 300px;
+        min-height: 300px;
         margin-top: 10px;
     }
 }

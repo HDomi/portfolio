@@ -68,6 +68,35 @@ textarea:focus {outline:none;padding-left: 10px;padding-top:10px;}
     color: #000;
   }
 }
+/*로딩*/
+.loading_txt{
+  position: relative;
+  font-size: 6.5vw;
+  color: #080f2a;
+  -webkit-text-stroke: 0.1vw #16214d;
+  text-transform: uppercase;
+}
+.loading_txt::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ff1fb4;
+  -webkit-text-stroke: 0vw #16214d;
+  border-right: 2px solid #ff1fb4 ;
+  overflow: hidden;
+  animation: ldanimate 1.8s linear infinite;
+}
+@keyframes ldanimate{
+  0%,10%,100%{
+      width: 0;
+  }
+  70%,90%{
+      width: 100%;
+  }
+}
 .text_left{text-align: left; padding-left: 10px;}
 /*메인 sec*/
 
