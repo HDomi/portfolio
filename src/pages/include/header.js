@@ -1,4 +1,3 @@
-import './left_foot.css';
 import React,{useState} from "react";
 import { Link, Outlet } from "react-router-dom"; //링크걸기
 import logo_w from "../../img/ic_dmlogo_w.png";

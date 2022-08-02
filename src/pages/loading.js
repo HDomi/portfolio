@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Spinner from '../img/loading.gif';
 
 const Loading =() => {
     const Background = styled.div`

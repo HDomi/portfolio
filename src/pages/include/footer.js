@@ -1,5 +1,4 @@
 import React from "react";
-import './left_foot.css';
 import { Outlet } from "react-router-dom";
 
 const footer =() => {

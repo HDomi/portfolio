@@ -1,7 +1,4 @@
 import {React} from "react";
-import './cnts/cnt.css';
-import '../App.css';
-import './pages.css';
 import Tilt from 'react-vanilla-tilt';
 import profile_all from "../img/profile_all.jpg";
 import Skills from "./include/skills.js";

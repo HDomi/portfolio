@@ -1,7 +1,4 @@
 import React, {Component} from 'react'
-import './cnts/cnt.css';
-import '../App.css';
-import './pages.css';
 import LandingList from "./include/landingList";
 
 class LandingPage extends Component  {

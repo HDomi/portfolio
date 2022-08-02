@@ -1,5 +1,4 @@
 import React from 'react';
-import './cnts/cnt.css';
 import { default as useScrollFadeIn } from '../hooks/useScrollFadeIn'
 const Desingbn = () => {
     const animatedItem = {

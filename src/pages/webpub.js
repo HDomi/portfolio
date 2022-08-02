@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import './cnts/cnt.css';
-import '../App.css';
-import './pages.css';
 import { default as useScrollFadeIn } from '../hooks/useScrollFadeIn'
 import PubModal from './include/PubModal'
 const Webpub =() => {

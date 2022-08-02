@@ -1,5 +1,7 @@
 import './App.css';
-
+import './pages/pages.css';
+import './pages/include/left_foot.css';
+import './pages/cnts/cnt.css';
 import React, {useState, useEffect} from 'react';
 
 import Loading from './pages/loading.js';
