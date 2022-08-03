@@ -40,10 +40,10 @@ const LeftMenu =() => {
         
             <div className={"lm_menu_wrap " + (hamOpen ? "lm_menu_wrap_show" : " ")}>
                 <ul>
-                    <li><Link to={"/portfolio/"}>- Homepage</Link></li>
-                    <li><Link to={"/portfolio/profile"}>- Profile</Link></li>
-                    <li><Link to={"/portfolio/webpub"}>- Web_Publishing</Link></li>
-                    <li onClick={()=>togglewdMenu()}>- Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : " ")}> ▼</span>
+                    <li><Link to={"/portfolio/"}> Homepage</Link></li>
+                    <li><Link to={"/portfolio/profile"}> Profile</Link></li>
+                    <li><Link to={"/portfolio/webpub"}> Web_Publishing</Link></li>
+                    <li onClick={()=>togglewdMenu()}> Web_Design<span className={"try_set " + (webdeOpen ? "reflect" : " ")}> ▼</span>
                         <div className={"webde_sh lm_shelf " + (webdeOpen ? "lm_shelf_show" : " ")}>
                             <ul>
                                 <li>└ <Link to={"/portfolio/wd/banner"}>배너</Link></li>
@@ -51,7 +51,7 @@ const LeftMenu =() => {
                             </ul>
                         </div>
                     </li>
-                    <li><Link to={"/portfolio/contactme"}>- Contact ME</Link></li>
+                    <li><Link to={"/portfolio/contactme"}> Contact ME</Link></li>
                 </ul>
             </div>
          
