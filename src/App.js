@@ -10,6 +10,8 @@ import Loading from './pages/loading.js';
 import Header from "./pages/include/header.js";
 import Footer from "./pages/include/footer.js";
 import LeftMenu from "./pages/include/left_menu.js";
+import MiniHeader from "./pages/include/mini_header.js";
+
 import CntTable from './pages/cnt_table';
 
 const App = () => {
@@ -29,6 +31,7 @@ const App = () => {
         <LeftMenu />
           <div className="app-body">
             <Header />
+            <MiniHeader />
             <CntTable />
             <Footer />
           </div>

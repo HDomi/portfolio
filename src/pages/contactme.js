@@ -1,6 +1,9 @@
 import React, {useRef} from "react";
 import emailjs from '@emailjs/browser';
+import {ToastsContainer, ToastsStore, ToastsContainerPosition} from 'react-toasts';
+
 const Contactme =() => {
+
     const form  = useRef();
 
     const sendEmail = (e) => {
@@ -8,9 +11,9 @@ const Contactme =() => {
   
       emailjs.sendForm('service_rn3s8bb', 'template_uxcl5rr', form.current, 'k_8IR-1N5UHZVftBj')
         .then((result) => {
-            alert((result.text)+"! 전송이 완료되었습니다.");
+            ToastsStore.success((result.text)+"! 전송이 완료되었습니다.");
         }, (error) => {
-            alert((error.text)+"! 전송실패, hwangjae1139@gmail.com으로 직접보내주시기 바랍니다.");
+            ToastsStore.warning((error.text)+"! 전송실패, hwangjae1139@gmail.com으로 직접보내주시기 바랍니다.");
         });
     };
   
@@ -32,8 +35,9 @@ const Contactme =() => {
                                     <li><input type="email" className="cntac_txtbar" placeholder="이메일" name="user_email"/></li>
                                     <li><textarea className="cntac_txtbar txtbar_rec" placeholder="내용" name="user_message"/></li>
                                     <button type="submit" className="cntac_btn" value="Send">보내기</button>
+                                    <ToastsContainer position={ToastsContainerPosition.TOP_CENTER} store={ToastsStore}/>
                                 </ul>
-                            </form>      
+                            </form>
                         </div>
                     </div>    
                 </div>

@@ -74,8 +74,8 @@ const Webpub =() => {
                     <div className="pub_cnt_wrap" key={id}>
                         <div className="pub_cnt" {...animatedItem[id]} onClick={buttonValueSetting}>
                             <div className="webpub_txt" id={id}>
-                                <b>{title}<br/><div className="webpub_gyd">기여도 : {gyd} / 반응형 : {buh}</div></b><br/>
-                                <p>{old}<br/><br/><span>{des}</span></p>
+                                <b id={id}>{title}<br/><div className="webpub_gyd" id={id}>기여도 : {gyd} / 반응형 : {buh}</div></b><br/>
+                                <p id={id}>{old}<br/><br/><span id={id}>{des}</span></p>
                             </div>
                             <img className="webpub_img" id={id} alt="배너사진" src={process.env.PUBLIC_URL + '/img/webpub/thumnail/' + id + '.jpg'}/> 
                         </div>
@@ -197,7 +197,7 @@ const Webpub =() => {
                         </div>
                         <div className="text_area linkarea">
                             <div className="link_txt link_btn" onClick={() => window.open(shortct)}>
-                                사이트 바로가기
+                                <p>Go Webpage</p>
                             </div>
                         </div>
                         <div className="tit_line"></div>

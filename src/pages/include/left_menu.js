@@ -28,7 +28,7 @@ const LeftMenu =() => {
                 </>
 
             
-            <Link to={"/login"}><img className="ic_domilogo ic_dl" alt="ic_domilogo" src={logo_w} width="45px"/></Link>
+            <Link to={"/portfolio/login"}><img className="ic_domilogo ic_dl" alt="ic_domilogo" src={logo_w} width="45px"/></Link>
          
 
             <div className={"profile_img_sec " + (hamOpen ? "profile_img_sec_n" : " ")}>

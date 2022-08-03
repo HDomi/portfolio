@@ -5,6 +5,8 @@ import {
   } from "react-router-dom";
 
 import Main from "./main.js";
+import LoginSec from "./loginSec";
+
 import Profile from "./profile.js";
 import Webpub from "./webpub";
 import Contactme from "./contactme.js";
@@ -20,6 +22,7 @@ function CntTable(){
               <Route path="/" element={<Main />} />
               
               <Route path="/portfolio/" element={<Main />} />
+              <Route path="/portfolio/login" element={<LoginSec />} />
               <Route path="/portfolio/profile" element={<Profile />} />
               <Route path="/portfolio/webpub" element={<Webpub />} />
               <Route path="/portfolio/contactme" element={<Contactme />} />

@@ -26,7 +26,7 @@ const Header =() => {
                     </label>
                 </>
       
-                <Link to={"/login"}><img className="ic_domilogo ic_dl hd_domilogo" alt="ic_domilogo" src={logo_w} width="45x"/></Link>
+                <Link to={"/portfolio/login"}><img className="ic_domilogo ic_dl hd_domilogo" alt="ic_domilogo" src={logo_w} width="45x"/></Link>
                 
                 
                 <div className={"hd_menu_wrap " + (hamOpen ? "hd_menu_wrap_show" : " ")}>
