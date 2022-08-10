@@ -22,13 +22,16 @@ const Desingbn = () => {
         17: useScrollFadeIn('up', 1, 0.85),
         18: useScrollFadeIn('up', 1, 0.9),
         19: useScrollFadeIn('up', 1, 0.95),
+        20: useScrollFadeIn('up', 1, 1.00),
+        21: useScrollFadeIn('up', 1, 1.05),
       };
     const menus = [
         "1", "2", "3", "4",
         "5", "6", "7", "8",
         "9", "10", "11", "12",
         "13", "14", "15", "16",
-        "17", "18", "19", "20"
+        "17", "18", "19", "20",
+        "21", "22"
     ]
     const menuList = menus.map((menu, index) => (
         <div className="dg_cnt_wrap" {...animatedItem[index]} key={index} id={menu}>
