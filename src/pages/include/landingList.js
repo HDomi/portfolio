@@ -16,7 +16,10 @@ const LandingList = () => {
         8: useScrollFadeIn('up', 1, 0.4),
         9: useScrollFadeIn('up', 1, 0.45),
         10: useScrollFadeIn('up', 1, 0.5),
-        11: useScrollFadeIn('up', 1, 0.55),
+        11: useScrollFadeIn('up', 1, 0.6),
+        12: useScrollFadeIn('up', 1, 0.65),
+        13: useScrollFadeIn('up', 1, 0.7),
+        14: useScrollFadeIn('up', 1, 0.75),
     };
     //랜딩페이지 리스트 아이디 생성
     const landListID = [
@@ -79,6 +82,21 @@ const LandingList = () => {
             id:11,
             title:"Cloud Stinger Core",
             text:"Cloud Stinger Core의 상세페이지"
+        },
+        {
+            id:12,
+            title:"Google Drive 이벤트",
+            text:"Google Drive 이벤트의 랜딩페이지"
+        },
+        {
+            id:13,
+            title:"소유권 이전형 호스팅 상품",
+            text:"C소유권 이전형 호스팅 상품의 랜딩페이지"
+        },
+        {
+            id:14,
+            title:"친구추천 이벤트",
+            text:"친구추천 이벤트의 랜딩페이지"
         }
     ]
      //랜딩 리스트를 누르면 누른 해당 id가져오게 저장
@@ -126,6 +144,9 @@ const LandingList = () => {
         {id:9},
         {id:10},
         {id:11},
+        {id:12},
+        {id:13},
+        {id:14},
     ]
     //모달팝업 내부 이미지를 map으로 모달리스트 생성
     const landImgModal = landImgId.map((landImgIds) => {
