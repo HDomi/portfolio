@@ -45,11 +45,7 @@ const Profile =() => {
                             <div className="ex_card_wrap">
                                 <div className="card">
                                     <div className="ro_box"></div>
-                                    <div className="card_tit">네트워크관리사2급</div>
-                                </div>
-                                <div className="card">
-                                    <div className="ro_box"></div>
-                                    <div className="card_tit">MOS PPT2016</div>
+                                    <div className="card_tit">웹디자인 기능사</div>
                                 </div>
                                 <div className="card">
                                     <div className="ro_box"></div>
@@ -58,6 +54,14 @@ const Profile =() => {
                                 <div className="card">
                                     <div className="ro_box"></div>
                                     <div className="card_tit">컴퓨터활용능력2급</div>
+                                </div>
+                                <div className="card">
+                                    <div className="ro_box"></div>
+                                    <div className="card_tit">네트워크관리사2급</div>
+                                </div>
+                                <div className="card">
+                                    <div className="ro_box"></div>
+                                    <div className="card_tit">MOS PPT2016</div>
                                 </div>
                             </div>
                             <div className="tit_line"></div>
@@ -101,7 +105,7 @@ const Profile =() => {
                                                 <h2>04</h2>
                                                 <h3>닷네임코리아</h3>
                                                 <p>디자인팀 팀장<br/>전반적인 디자인 및 퍼블리싱</p>
-                                                <div className="p_card_btn">Oct 2021. ~<br/>Oct 2022.</div>
+                                                <div className="p_card_btn">Oct 2021. ~<br/>~ing 2022.</div>
                                             </div>
                                         </div>
                                     </Tilt>
